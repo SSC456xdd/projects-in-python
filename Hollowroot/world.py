@@ -1,8 +1,7 @@
+from character import Character
 
-player = {
- "name": "Mochi", "hp": 100, "attack": 10, "max_hp": 100,
- 'inventory': {"potions": 0,}
- }
+user = Character("Mochi",100,10,100)
+
 prison = {
  "Cell": {
   "description": "An old, worn out bed and a hole big enough you could go through it.",
@@ -10,7 +9,7 @@ prison = {
  },
  "Cell block": {
   "description": "You see a group of bugs eating something off the wall.",
-  "enemy":{"name": "Fungi eater", 'hp': 25, 'attack': 2, 'max_hp': 25},
+  "enemy": Character("Fungi eater", 25, 2, 25),
   "exits":{"west":"Cell", "north": "Storage", "east": "Root tunnel"}
  },
  "Storage": {
@@ -50,4 +49,11 @@ prison = {
   "description": "A beautiful city with lots of crime, you see where you were arrested wrongfully.",
   "exits": {}
  }
+}
+
+placeholder = {
+
+
+    "cheeseburger"
+
 }
